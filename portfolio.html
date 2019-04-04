@@ -1,17 +1,115 @@
 <!DOCTYPE html>
-<html lang="en-us">>
+<html lang="en-us">
 
-  <meta charset="UTF-8">
-  <title>++++++</title>
+  <head>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+
+    <!-- Get rid of those yucky styles coming from who knows where -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     
-</head>
+  
+  </head>
 
-<body>
-   
+  <body style="background: url(./assets/images/mosaic.png)">
 
+    <header id="my-portfolio-header">
+      <nav id="my-portfolio-header-nav">
 
-</body>
+          <div id="my-name">
+            <h1>Jan Jakubowski</h1>
+          </div>
+          
+          <ul class="my-header-links navbar-nav navbar-expand-md">
+            <li class="navbar-nav"><a class="nav-bar-link" href="./index.html">About</a></li>
+            <li class="navbar-nav"><a class="nav-bar-link" href="./portfolio.html">Portfolio</a></li>
+            <li class="navbar-nav"><a class="nav-bar-link" href="./contact.html">Contact</a></li>
+            <li class="navbar-nav"><a class="nav-bar-link" target="_blank" href="https://www.linkedin.com/in/janjakubowski"><img src="./assets/images/linkedin.png" alt="LinkedIn"></a></li>
+          </ul>
+
+      </nav>
+    </header>
+
+    <section id="meat-n-potatoes" class="container-fluid">
+
+      <div class="page-title">
+        <h1>Portfolio</h1>
+      </div>
+      <hr>    
+
+      <container id="portfolio-container">
+
+        <!-- mind on drugs -->
+        <div class="card portfolio-card" style="width: 400px">
+            <img class="card-img-top" src="assets/images/a1.jpg">
+            <div id="card-body">
+              <h4 class="card-title">Marvel's Legion</h4>
+              <p class="card-text">Explore the Marvel Universe, beginning with the mind-bending Legion</p>
+              <a href="#" class="btn btn-primary">Marvel Cinematic Universe</a>
+            </div>
+        </div>
+
+        <div class="card portfolio-card" style="width:400px">
+            <img class="card-img-top" src="assets/images/brain.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Brain</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">The same thing we do every night</a>
+            </div>
+          </div>
+
+        <!-- Lost Wages -->
+        <div class="card" style="width: 400px">
+            <img class="card-img-top" src="assets/images/nyny.jpg">
+            <div id="card-body">
+              <h4 class="card-title">New Home of NFL's Raiders</h4>
+              <p class="card-text">Now that Las Vegas is the home the Raiders, let's go place some of our hard earned wages on the upcoming NFL weekend</p>
+              <a href="#" class="btn btn-primary">Put $20 on ?</a>
+            </div>
+        </div>
+
+        <!-- Cow Flatulence -->
+        <div class="card portfolio-card" style="width: 400px">
+            <img class="card-img-top" src="assets/images/moo.jpg">
+            <div id="card-body">
+              <h4 class="card-title">Stop Climate Change</h4>
+              <p class="card-text">What is your carbon footprint?</p>
+              <a href="#" class="btn btn-primary">Find Out</a>
+            </div>
+        </div>
+        
+        <!-- Rolling the Dice on Sushi -->
+        <div class="card portfolio-card" style="width: 400px">
+            <img class="card-img-top" src="assets/images/sushi.jpg">
+            <div id="card-body">
+              <h4 class="card-title">Listeria and Salmonella</h4>
+              <p class="card-text">Let's roll the sice on sushi. What's your favorite or let's make a new one</p>
+              <a href="#" class="btn btn-primary">Sake! Sake! Sake!</a>
+            </div>
+        </div>
+
+        <!-- drop of water -->
+        <div class="card portfolio-card" style="width: 400px">
+            <img class="card-img-top" src="assets/images/drop.jpg">
+            <div id="card-body">
+              <h4 class="card-title">Time Itself</h4>
+              <p class="card-text">Let's roll the sice on sushi. What's your favorite or let's make a new one</p>
+              <a href="#" class="btn btn-primary">Timeout</a>
+            </div>
+        </div>
+      </container>
+
+    </section>
+
+    <footer id="portfolio-footer">
+      <p>&#9400;2019 Double Black Diamond Consulting</p>
+    </footer>
+
+  </body>
 
 </html>
