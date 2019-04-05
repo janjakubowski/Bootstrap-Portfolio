@@ -134,6 +134,7 @@ color: #ccc;
   font-size: 28px;
   font-weight: bold;
   color: darkslateblue;
+  border-bottom: 2px solid darkslateblue;
 }
 
 #about-me {
@@ -158,9 +159,24 @@ color: #ccc;
   margin: 25px auto 25px auto;
 } 
 
-portfolio-card {
-  background-color: darkslateblue !important;
+.portfolio-card {
+  width: 250px;
+  background-color: darkslateblue;
   color: #ccc;
+  margin: 20px 20px;
+  padding: 10px 10px;
+  border-width: 5px;
+  border-color: #000;
+}
+
+.portfolio-card-title {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.portfolio-card-text {
+  padding: 0 5px;
+  font-size: 12px;
 }
 
 #pic-label {
