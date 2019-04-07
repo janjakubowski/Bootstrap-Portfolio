@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Bootstrap - Contact</title>
 
     <!-- Get rid of those yucky styles coming from who knows where -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
@@ -13,50 +13,61 @@
     <!-- Linking CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
+    <!-- Link to bootstrapcdn and associated js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
   </head>
 
-  <body style="background: url(./assets/images/mosaic.png)"></body>
+  <body>
 
-    <header id="my-portfolio-header">
-        <nav id="my-portfolio-header-nav">
+    <div class="content">
 
-            <div id="my-name">
-              <h1>Jan Jakubowski</h1>
+      <!-- Responsive header which creates icon for links and expands the links below the header -->
+      <header id="my-portfolio-header"> 
+          <nav id="my-portfolio-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+            <span id="my-name" class="navbar-brand mb-1 h1">Jan Jakubowski</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myLinks"
+              aria-controls="myLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myLinks">
+              <ul class="my-header-links nav navbar-nav navbar-right">
+                <li class="nav-item"><a class="nav-link" href="./index.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/janjakubowski"><img src="./assets/images/linkedin.png" alt="LinkedIn"></a></li>
+              </ul>
             </div>
-            
-            <ul class="my-header-links navbar-nav navbar-expand-md">
-              <li class="navbar-nav"><a class="nav-bar-link" href="./index.html">About</a></li>
-              <li class="navbar-nav"><a class="nav-bar-link" href="./portfolio.html">Portfolio</a></li>
-              <li class="navbar-nav"><a class="nav-bar-link" href="./contact.html">Contact</a></li>
-              <li class="navbar-nav"><a class="nav-bar-link" target="_blank" href="https://www.linkedin.com/in/janjakubowski"><img src="./assets/images/linkedin.png" alt="LinkedIn"></a></li>
-            </ul>
+          </nav>
+        </header>
 
-      </nav>
-    </header>
-
-    <!-- main content of the page -->
-    <section id="meat-n-potatoes">
+      <!-- main content of the page -->
+      <section id="meat-n-potatoes">
+        
+        <div class="page-title">
+          <h1>Contact</h1>
+        </div>
       
-      <div class="page-title">
-        <h1>Contact</h1>
-      </div>
-      <hr>
-    
-      <!-- form to collect name, email addr and any comments -->
-      <form id="request-contact-form" action="#">
-        Name: <br> 
-        <input type="text" class="one-line-input" name="nom-du-plume" placeholder="Tyrion Lannister">
-        <br><br>
-        Email: <br> 
-        <input type="email" class="one-line-input" name="email-addr" placeholder="imp@gameofthrones.com">
-        <br><br>
-        Comment: <br>
-        <input type="text" class="gt1-line-input" name="comment" placeholder="">
-        <br><br>
-        <input type="submit" class="form-submit" value="Let 'er Rip">
-      </form>
+      
+        <!-- form to collect name, email addr and any comments -->
+        <form id="request-contact-form" action="#">
+          Name: <br> 
+          <input type="text" class="one-line-input" name="nom-du-plume" placeholder="Tyrion Lannister">
+          <br><br>
+          Email: <br> 
+          <input type="email" class="one-line-input" name="email-addr" placeholder="imp@gameofthrones.com">
+          <br><br>
+          Comment: <br>
+          <input type="text" class="gt1-line-input" name="comment" placeholder="">
+          <br><br>
+          <input type="submit" class="form-submit" value="Let 'er Rip">
+        </form>
 
-    </section>
+      </section>
+
+    </div>  
 
     <footer id="portfolio-footer">
         <p>&#9400;2019 Double Black Diamond Consulting</p>

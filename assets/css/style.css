@@ -12,6 +12,15 @@ body, html {
   padding: 0;
 }
 
+body {
+  background-image: url(./../images/mosaic.png);
+}
+
+.content {
+  min-height: calc(100vh - 30px);
+  /* 100vh is 100% of screen */
+}
+
 p {
   font-size: 20px;
 }
@@ -19,20 +28,39 @@ p {
 nav {
   max-width: 960px;
   margin: 0 auto 0 auto;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 #my-portfolio-header {
   border-bottom: 4px solid #4aaaa5;
-  margin: 0 auto 0 auto;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
   background-color:#ccc;
-  color: darkslateblue;
 }
 
-#my-portfolio-header-nav {
+#myLinks {
+  background-color: #ccc;
+  color: darkslateblue !important;
+}
+
+#my-portfolio-nav {
   max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-toggler {
+  background-color: darkslateblue;
+  margin: 0 20px 0 0;
+}
+
+.navbar-toggler-icon {
+  background-color: #ccc;
+}
+
+.nav-link {
+  color: darkslateblue;
 }
 
 #meat-n-potatoes {
@@ -54,6 +82,7 @@ nav {
 footer p {
   font-size: 10px;
   text-align: center;
+  height: 15px;
 }
 
 /* use inside a meat-n-potatoes section */
@@ -73,10 +102,6 @@ footer p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.portfolio-img-size {
-  width: 250px; 
-  height: 300px;
-}
 
 .one-line-input {
   width: 90%;
@@ -95,7 +120,7 @@ footer p {
 #my-name {
   float: left;
   margin: 0 0;
-  padding: 0 20px;
+  padding: 0 12px;
   font-size: 32px;
   font-weight: bold;
   background-color: darkslateblue;
@@ -103,13 +128,7 @@ footer p {
 }
 
 .my-header-links {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* flex-wrap: wrap; */
-  /* list-style-type: none; */
   align-items: center;
-  /* margin: 0; */
-  /* padding: 0; */
 }
 
 .nav-bar-link {
@@ -124,8 +143,8 @@ footer p {
 }
 
 a:hover {
-background-color: darkslateblue;
-color: #ccc;
+  background-color: darkslateblue;
+  color: #ccc !important;
 }
 
 .btn:hover {
@@ -148,27 +167,16 @@ color: #ccc;
   padding: 20px 20px;
 }
 
-#about-me-pic-prime {
-  float: left;
-  margin: 0 10px 10px 0;
+.carousel-item {
+  min-height: 350px;
 }
-
-#about-me-pic-secondary {
-  float: right;
-}
-
-#portfolio-image {
-  position: relative;
-  width: 250px;
-  height: 300px;
-  margin: 25px auto 25px auto;
-} 
 
 .portfolio-card {
   width: 250px;
+  min-height: 450px;
   background-color: darkslateblue;
   color: #ccc;
-  margin: 20px 20px;
+  margin: 20px auto;
   padding: 10px 10px;
   border-width: 5px;
   border-color: #000;
@@ -184,13 +192,4 @@ color: #ccc;
   font-size: 12px;
 }
 
-#pic-label {
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-  padding: 4px 0;
-  font-size: 1px;
-  text-align: center;
-  background-color: darkslateblue;
-  color: #ccc;
-}
+/* END OF FILE */
